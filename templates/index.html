@@ -1,0 +1,129 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+
+<body>
+<section id="title-body">
+    <h1>JOURNAL PROMPT GENERATOR <br>FOR DAILY REFLECTION</h1>
+    <img class="background-image" src="static/background2.jpg">
+    <p>
+        You don't need to give journaling much thought before beginning. Yes, there are many different kinds of journals
+        and ways to keep them that,
+        depending on your goals, may or may not be more productive. However, you may start right away by just getting
+        some paper (or using a computer).
+        When you sit down to journal, you need to be in your space, a good headspace. That way, you feel relaxed, in
+        tune with yourself and ready to write out what you feel in your heart.
+        It is understandable when you feel like journaling, but have no idea what to write about.<br>
+        You sit down in your favorite spot, open your favorite journal, and then all you hear are crickets.
+        Meaning, you have no idea what to write about. Not just that, you may have an idea, in fact multiple, but then
+        you get exhausted from having to think about what to write.
+    </p>
+    <hr>
+    </br>
+    <p>
+        Wouldn’t it be better, and make life easier if you could just have a new prompt at your fingertips every day,
+        giving you an idea of what to write, and boosting your creativity?
+        That’s exactly where this prompts generator comes in.
+        Here, this prompt generator gives you a new prompt each day, enough for the entire year, so you never run out of
+        ideas on what to write.
+        The best thing about this prompt generator is that it covers various aspects of your life.
+    <ul class="body-list">
+        <li><strong>Self-Care and Self-love</strong></li>
+        <li><strong>Early life</strong></li>
+        <li><strong>Relationships</strong></li>
+        <li><strong>Emotions</strong></li>
+        <li><strong>Anxiety and Depression</strong></li>
+        <li><strong>Confidence</strong></li>
+        <li><strong>Goal Setting and Planning</strong></li>
+        <li><strong>Living a successful and fulfilling life, and much more.</strong></li>
+    </ul>
+    </p>
+    <hr>
+    <p>
+        You get an idea delivered to you every day and never have to worry about what to write about next.
+        Every day you get something new and get to dig deep and be creative in various aspects of your life.
+        Don’t be scared to try something new because when you are open to trying new things and not scared, you open
+        yourself to a world of endless possibilities.
+        These generator is filled with over 1200 prompts specific for the different areas of your life, and will have you thinking and reflecting.
+        Give our journal prompt generator a try and see what's in store for you.
+        <br><strong>Click on the button below to get new prompts. </strong>
+        </br>Bookmark this page, so you can come back to it each day and get new prompts to start your day and make your
+        day a great one.
+    </p>
+
+
+    <h2 class="generator-title">DAILY PROMPT GENERATOR</h2>
+    <form action="{{ url_for('home') }}">
+        <div class="input"><textarea class="random-prompt-text" id="prompttext" rows="2" cols="100" readonly="readonly">{{ prompt }}</textarea></div>
+        <div class="generate-button">
+            <button id="promptbutton">
+                 <a href="{{ url_for('home') }}" class="btn btn-secondary btn-lg button" > Generate new Prompt </a>
+            </button>
+        </div>
+    </form>
+    <script type="text/javascript">
+        amzn_assoc_placement = "adunit0";
+        amzn_assoc_search_bar = "true";
+        amzn_assoc_tracking_id = "ellamoves0106-20";
+        amzn_assoc_search_bar_position = "bottom";
+        amzn_assoc_ad_mode = "search";
+        amzn_assoc_ad_type = "smart";
+        amzn_assoc_marketplace = "amazon";
+        amzn_assoc_region = "US";
+        amzn_assoc_title = "Shop Related Products";
+        amzn_assoc_default_search_phrase = "cute journals for writing";
+        amzn_assoc_default_category = "All";
+        amzn_assoc_linkid = "f3a382100469b156e10844a6f57ccb78";
+    </script>
+    <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+    <img class="background-image" src="static/background.jpg">
+    <h2 class="">MORE.....</h2>
+    <p>
+        If you don’t feel like coming here all the time, how about signing up and getting one new prompt delivered to
+        you daily?
+        Every day, you will get one new prompt to work on and get your day started. Make things easier for you and get a
+        new prompt delivered to you via email.
+        <br> <strong class="signup">Signup below!!</strong>
+    <div>
+        <a href="{{ url_for('signup') }}" class="btn btn-secondary btn-lg button"> GET DAILY PROMPTS </a>
+    </div>
+    </p>
+    <hr>
+    <section id="blog-section">
+        <h2 class="blog-h2">BLOG</h2>
+        <p class="blog-paragraph">Have a look at our blog posts. They are sure to educate you on all you need to know about journalling.</p>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-content">
+                    <img src="static/prompts.jpg" alt="cute journal on a table" class="blog-image">
+                    <a href="{{ url_for('prompt_generator') }}"><h4 class="homepage-blog-title">What is a prompt Generator and why do you need one?</h4></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-content">
+                    <img src="static/couch.jpg" alt="comfortable couch for journaling" class="blog-image">
+                    <a href="{{ url_for('make_journaling_fun') }}"><h4 class="homepage-blog-title">7 Easy and Creative ways to make Journaling Fun (and set the right journaling mood)</h4></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-content">
+                    <img src="static/bullet-journal.jpg" alt="bullet journal" class="blog-image">
+                    <a href="{{ url_for('bullet_journal_ideas') }}"><h4 class="homepage-blog-title">15 Easy to start Bullet journal Ideas + supplies to make it a lot more fun</h4></a>
+                </div>
+            </div>
+        </div>
+        <div>
+        <a href="{{ url_for('blog') }}" class="btn btn-secondary btn-lg button"> MORE POSTS </a>
+        </div>
+    </section>
+</section>
+{% include 'footer.html' %}
+
+</body>
+<!--<script>-->
+<!--&lt;!&ndash;    Select Button by id&ndash;&gt;-->
+<!--    const promptbutton = document.getElementById('promptbutton');-->
+<!--    promptbutton.addEventListener('click', home(){-->
+<!--        document.getElementById('prompttext').innertext = {{ prompt }}-->
+<!--    })-->
+<!--</script>-->

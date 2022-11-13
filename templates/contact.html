@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+<section id="contact">
+    <h1 class="contact-title">CONTACT ME</h1>
+    <form action="{{ url_for('contact') }}" method="post">
+        <div class="mb-3">
+            <label></label>
+            <input type="text" name="name" placeholder="Name" class="form-control" required="required">
+            <label></label>
+            <input type="email" name="email" placeholder="Email" class="form-control" required="required">
+            <label></label>
+            <input type="text" name="subject" placeholder="Subject" class="form-control" required="required">
+            <div class="textarea">
+                <label></label>
+                <textarea class="message-box" placeholder="Message" name="message" rows="8" cols="100"></textarea>
+            </div>
+            <div class="generate-button">
+                <button type="submit" class="btn btn-secondary btn-lg button">
+                    CONTACT ME
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+{% include 'footer.html' %}

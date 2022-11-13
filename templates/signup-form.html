@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sign-in-form-section">
+        <h3 class="sign-in-form-title">GET NEW PROMPTS DAILY TO YOUR INBOX</h3>
+        <form  action="{{ url_for('signup') }}" method="post">
+            <div class="sign-in-form-for-posts">
+                <label></label>
+                <input class="form-control sign-in-input" type="text" placeholder="Name" name="name" required="required">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <label></label>
+                <input class="form-control sign-in-input" type="email" placeholder="Email" name="email" required="required">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                </br>
+            </div>
+            <div class="generate-signup-button"><button type="submit" class="btn btn-secondary btn-lg button">SIGNUP</button></div>
+        </form>
+    </section>
+</body>
+
+
+</html>

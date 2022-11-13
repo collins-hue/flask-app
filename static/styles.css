@@ -1,0 +1,369 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+   font-family: 'Montserrat', sans-serif;
+   padding: 5% 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+ul{
+     font-family: 'Cairo', sans-serif;
+}
+
+
+p, label{
+    text-align: left;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+
+hr{
+    border: dotted #694E4E 6px;
+    border-bottom: None;
+    width: 10%;
+    margin: 50px auto;
+}
+
+button{
+    border: none;
+}
+
+textarea{
+    font-family: 'Cairo', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+  color: #F3C5C5;
+}
+
+
+/* Navigation Section */
+#navbar{
+    padding: 3% 4%;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav-item{
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.logo{
+    width: 70px;
+}
+
+/* Title Body */
+#title-body{
+    text-align: center;
+    padding: 3% 6%;
+}
+
+.input{
+    padding: 3% 15%;
+}
+
+.generator-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 5% 0 0 0;
+   font-weight: bold;
+}
+
+.background-image{
+    width: 80%;
+    position: center;
+    padding-bottom: 60px;
+    padding-top: 35px;
+}
+
+.body-list{
+    text-align: left;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+
+.button{
+    background-color: #694E4E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover{
+    background-color: #F3C5C5;
+}
+
+.border{
+     border-color: #694E4E;
+}
+
+/* sign-in-section */
+#sign-in-section{
+    text-align: center;
+    padding: 3% 0;
+}
+
+.sign-in-form{
+    padding: 0 30%;
+}
+
+.sign-in-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 2% 0 0 0;
+   font-weight: bold;
+   color: #000;
+}
+
+.signup{
+    font-size: 22px;
+}
+
+/* Contact Section */
+#contact{
+    padding: 2% 20%;
+}
+
+.contact-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 3% 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+.textarea{
+    padding: 2% 0;
+}
+
+/* Journal Section */
+#journals{
+    padding: 3% 10%;
+}
+
+.affiliate-disclosure{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.shop-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 1% 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+.content{
+    padding: 8% 0;
+}
+
+.image-content{
+    width: 120px;
+}
+
+.journal-description{
+    padding: 2% 0;
+}
+
+.shop{
+    text-decoration: none;
+    color: #fff;
+}
+
+.shop:hover{
+     color: #000;
+}
+
+/* Blog section */
+.blog-h2{
+   font-family: 'Montserrat', sans-serif;
+   padding-bottom: 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+.blog-paragraph{
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.blog-image{
+    width: 90%;
+}
+
+.homepage-blog-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 5% 0;
+   font-weight: bold;
+   text-align: left;
+   font-size: 17px;
+}
+
+.blog-content{
+    padding: 10% 0;
+}
+
+/* Main Blog */
+.blog-heading{
+    font-family: 'Montserrat', sans-serif;
+   padding: 2% 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+.main-blog-content{
+    padding: 5% 10%;
+}
+
+.main-blog-image{
+    width: 90%;
+}
+
+.blog-line{
+    border: dotted #694E4E 6px;
+    border-bottom: None;
+    width: 10%;
+    margin: 20px auto;
+}
+
+.main-blog-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 5% 0;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* Single Posts section */
+#single-post-section{
+    padding: 3% 7%;
+}
+
+.single-blog-image{
+    width: 80%;
+    margin-left: 120px;
+    margin-bottom: 100px;
+}
+
+.single-post-content{
+    text-align: left;
+}
+
+.blog-subtitle{
+   font-family: 'Montserrat', sans-serif;
+   padding: 0;
+   font-weight: bold;
+   text-align: center;
+}
+
+.sign-in-form-section{
+    text-align: center;
+    padding: 0;
+}
+
+.lists{
+     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.blog-post-link{
+    color: #C1A3A3;
+}
+
+
+/* Inserted form section */
+.sign-in-form-title{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   padding: 0;
+   color: #000;
+}
+
+.generate-signup-button{
+    padding-left: 45%;
+}
+
+/* Comment Section
+.comment-input{
+    padding-bottom: 20px;
+}
+
+#comment-box{
+    border-radius: 5px;
+}
+*/
+
+/* Footer Section */
+footer{
+     background-color: #C1A3A3;
+    text-align: center;
+    padding: 2% 5%;
+    color: #fff;
+}
+
+.footer-title{
+   font-family: 'Montserrat', sans-serif;
+   padding: 4% 0 0 0;
+   font-weight: bold;
+   color: #fff;
+}
+
+.footer-body{
+    text-align: center;
+}
+
+.footer-icon{
+    padding: 0 5px;
+    color: #694E4E;
+}
+
+.footer-icon:hover{
+    color: #F3C5C5;
+}
+
+.copyright{
+    padding: 1% 0 0 0;
+    text-align: center;
+}
+
+.fiverr-icon{
+    width: 38px;
+    margin-bottom: 15px;
+    padding:0 3px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 916px){
+    .random-prompt-text{
+        width: 110%;
+    }
+
+    .message-box{
+        width: 100%;
+    }
+
+    .sign-in-input{
+        width: 150%;
+    }
+    .single-blog-image{
+          width: 80%;
+        margin-left: 45px;
+        margin-bottom: 100px;
+    }
+    .generate-signup-button{
+        padding-left: 40%;
+}
+    .sign-in-form-for-posts{
+        padding: 0 25%;
+    }
+}

@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+    <section id="blog">
+        <h1 class="blog-heading">READ OUR POSTS</h1>
+        <hr class="blog-line">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="main-blog-content">
+                    <img class="main-blog-image" src="static/bullet-journal.jpg" alt="bullet-journal">
+                    <a href="{{ url_for('bullet_journal_ideas') }}"><h3 class="main-blog-title">15 Easy to start Bullet journal Ideas + supplies to make it a lot more fun</h3></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="main-blog-content">
+                    <img class="main-blog-image" src="static/couch.jpg" alt="comfortable couch for journaling">
+                    <a href="{{ url_for('make_journaling_fun') }}"><h3 class="main-blog-title">7 Easy and Creative ways to make Journaling Fun (and set the right journaling mood)</h3></a>
+                </div>
+            </div>
+             <div class="col-lg-6">
+                <div class="main-blog-content">
+                    <img class="main-blog-image" src="static/prompts.jpg" alt="cute journal on a table">
+                    <a href="{{ url_for('prompt_generator') }}"><h3 class="main-blog-title">What is a prompt Generator and why do you need one?</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+{% include 'footer.html' %}

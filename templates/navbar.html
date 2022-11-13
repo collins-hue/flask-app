@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+
+<body>
+    <section id="navbar">
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="">
+                    <img src="static/brand.png" alt="prompt-generator-logo" class="logo">
+                    Prompt Generator
+                </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+              <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                      <a href="{{ url_for('home') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ url_for('blog') }}">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="https://www.fiverr.com/eeellarh/give-you-my-ebook-on-journal-prompts-for-personal-development">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ url_for('signup') }}">Sign up</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ url_for('contact') }}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="{{ url_for('journal') }}">Shop Journals & Accessories</a>
+                  </li>
+              </ul>
+          </div>
+            </div>
+        </nav>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>

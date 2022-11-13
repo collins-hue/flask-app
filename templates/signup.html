@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color: red; font-size: 20px; text-align: center;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<body>
+    <section id="sign-in-section">
+        <h3 class="sign-in-title">GET NEW PROMPTS DAILY TO YOUR INBOX</h3>
+        <form  action="{{ url_for('signup') }}" method="post">
+            <div class="sign-in-form">
+                <label></label>
+                <input class="form-control sign-in-input" type="text" placeholder="Name" name="name" required="required">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <label></label>
+                <input class="form-control sign-in-input" type="email" placeholder="Email" name="email" required="required">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                </br>
+            </div>
+            <div class="generate-button"><button type="submit" class="btn btn-secondary btn-lg button">SIGNUP</button></div>
+        </form>
+    </section>
+</body>
+
+{% include 'footer.html' %}
