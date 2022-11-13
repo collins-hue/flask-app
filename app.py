@@ -28,32 +28,6 @@ class Users(db.Model):
 # db.create_all()
 
 
-def sendmessage():
-    # To get the particular column in the database
-    for name in session.query(Users.name).distinct():
-        for email in session.query(Users.email).distinct():
-            with open('prompts.txt', encoding='utf8') as content:
-                file = content.readlines()
-                prompt = random.choice(file)
-            with open('affirmations.txt', encoding='utf8') as f:
-                content = f.readlines()
-                affirmation = random.choice(content)
-
-            with smtplib.SMTP('smtp.gmail.com', port=587) as connection:
-                connection.starttls()
-                connection.login(user=EMAIL, password=PASSWORD)
-                connection.sendmail(from_addr=EMAIL, to_addrs=f"{email}",
-                                    msg=f"Subject:Good morning {name} \nHere is your daily affirmation and Journal "
-                                        f"prompt \n\n "
-                                        f"Affirmation of the day: {affirmation}"
-                                        f"Prompt of the Day: {prompt}"
-                                    )
-                connection.quit()
-
-
-# schedule.every().day.at('8:00').do(sendmessage)
-
-
 @app.route('/')
 def home():
     year = datetime.datetime.now().year
