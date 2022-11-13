@@ -7,13 +7,13 @@ import datetime
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ['MY-KEY']
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE']
+app.config['SECRET_KEY'] = os.environ.get('KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
-EMAIL = os.environ['EMAIL']
-PASSWORD = os.environ['PASSWORD']
+EMAIL = os.environ.get('EMAIL')
+PASSWORD = os.environ.get('PASSWORD')
 
 
 class Users(db.Model):
