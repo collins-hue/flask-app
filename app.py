@@ -6,13 +6,24 @@ import datetime
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
+#app.config['SECRET_KEY'] = os.environ.get('KEY')
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+#db = SQLAlchemy(app)
+
+#EMAIL = os.environ.get('EMAIL')
+#PASSWORD = os.environ.get('PASSWORD')
+
+
+
+app.config['SECRET_KEY'] = '=nlei)%v^=^eo58v^$%q9$a!4nmln#lgxbpa81xw3+wu@9xmcc'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
 EMAIL = os.environ.get('EMAIL')
 PASSWORD = os.environ.get('PASSWORD')
+
 
 
 class Users(db.Model):
@@ -22,9 +33,7 @@ class Users(db.Model):
 
     def __repr__(self):
         return f"{self.name} - {self.email}"
-
-
-# db.create_all()
+#db.create_all()
 
 
 @app.route('/')
