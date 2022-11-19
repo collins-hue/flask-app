@@ -6,20 +6,13 @@ import datetime
 import os
 
 app = Flask(__name__)
-SECRET_KEY = '=nlei)%v^=^eo58v^$%q9$a!4nmlnqlgxbpa81xw3+wu@9xmcc'
-SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite3'
-#app.config['SECRET_KEY'] = os.environ.get('KEY')
-#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
+app.config['SECRET_KEY'] = os.environ.get('KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
-#EMAIL = os.environ.get('EMAIL')
-#PASSWORD = os.environ.get('PASSWORD')
-
-EMAIL = 'webprojectw@gmail.com'
-PASSWORD = 'qsxdkdroaymrmklj'
-
-
+EMAIL = os.environ.get('EMAIL')
+PASSWORD = os.environ.get('PASSWORD')
 
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -99,5 +92,5 @@ def make_journaling_fun():
     return render_template('make-journaling-fun.html')
 
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
